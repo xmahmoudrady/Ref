@@ -1,0 +1,159 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// -----------------------------------------------------------------------------
+	//  - Styles
+	/*===============
+	Style_Of_Comment
+	===============*/
+	"Style_Of_Comment": {
+		"prefix": "!style",
+		"body": [
+			"/*===============",
+   				"$1",
+			"===============*/"
+	]
+},
+	
+/*===============
+Html_Structure_Js   		
+===============*/
+"Html_Structure_Js": {
+	"prefix": "!htmljs",
+	"body": [
+"<!DOCTYPE html>",
+"<html >",
+"<head>",
+"<style>",
+// "$1",
+"</style>",
+"    <meta charset=\"UTF-8\">",
+"    <title>Document</title>",
+"</head>",
+"<body>",
+"<h1 id=\"titleTag\"></h1>",
+"<script>",
+"$1",
+"</script>",
+"//<script src=\"Library/Master.js\"></script>",
+"</body>",
+"</html>"
+// ========
+// ========
+]
+	},
+	/*===============
+   		Html_Structure_Js_WithoutTags
+	===============*/
+	"Html_Structure_Js_WithoutTags": {
+		"prefix": "!html-js-Without-Tags",
+		"body": [
+	"<!DOCTYPE html>",	
+	"    <meta charset=\"UTF-8\">",
+	"    <title>Document</title>",
+	"<h1 id=\"titleTag\"></h1>",
+	"<script>",
+	"$1",
+	"</script>",
+	"//<script src=\"Library/Master.js\"></script>",
+	
+	// ========
+	// ========
+	]
+		},
+			/*===============
+   				Html_Structure_Js_WithoutTags
+			===============*/
+		"Html_Structure_WithoutTags": {
+			"prefix": "!htm",
+			"body": [
+		"<!DOCTYPE html>",	
+		"    <meta charset=\"UTF-8\">",
+		"<head> ",
+		"<!--<link rel=\"stylesheet\" href=\" LIbrary Of All\\library-reference.css\"> -->",
+		"    <title>$1</title>",
+		"<style>" ,
+		" </style>",
+		"</head>",
+		"<script>",
+		"$2",
+		"</script>",
+			]
+		
+	},
+		// -----------------------------------------------------------------
+		//  - Java Script
+		/*===============
+   		Print to console
+		===============*/
+	"Print to console": {
+		"prefix": "clg",
+		"body": [
+			"console.log($1);",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	/*===============
+   		document.write();
+	===============*/
+	"Print to Page": {
+		"prefix": "d.w",
+		"body": [
+			"document.write($1);",
+			"$2"
+		]	
+},
+
+				/*===============
+				printLine
+				===============*/
+			"print_Func_By_Me": {
+				"prefix": "!pl",
+				"body": [
+					"function p(ele) {",
+						"document.write(ele + \"<br>\");",
+					"}",
+			]},
+			/*===============
+   		Separate !sep
+			===============*/
+			"Separate": {
+				"prefix": "!sepp",
+				"body": [
+					"p(\"________________________________________________________________________________\");"
+			]},
+			// -------------------------------------------------------------------------
+			//  - Bootstrap
+	/*===============
+	BootsTrap Structure
+	===============*/
+	"Boots_Structure": {
+		"prefix": "!boots",
+		"body": [
+			
+"<html lang=\"en\">",
+"  <head>",
+"    <meta charset=\"UTF-8\" />",
+"    <title>Document</title>",
+"    <link rel=\"stylesheet\" href=\"CSS/bootstrap.min.css\" />",
+"  </head>",
+"  <body>",
+"",
+"<!-- Calling JS Files -->",
+"    <script src=\"JS_Files/jquery.min.js\"></script>",
+"    <script src=\"JS_Files/poper.min.js\"></script>",
+"    <script src=\"JS_Files/bootstrap.min.js\"></script>",
+"  </body>",
+"</html>",
+
+	]
+},
+
+	
+}
