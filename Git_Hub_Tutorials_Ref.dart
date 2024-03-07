@@ -11,7 +11,7 @@
     git branch            get Branches on your local Repo 
     git branch            branch_name_will_created   Create A Branch
     git checkout          branch_name_will_comeInto   Go To Branch
-    git  checkout   -b    rename_branch   Create Branch And Go To It
+    git  checkout   -b    Creat a Branch And Go To   Create Branch And Go To It
     git  branch     -m    rename_branch   Rename Brance You Are In
     git  branch     -d    Delete_branch   Check First If Edits Exist
     git  branch     -D    Delete_branch  Force Delete Without Check
