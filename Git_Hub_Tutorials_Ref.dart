@@ -38,7 +38,14 @@
       git config --global --edit => To Edit In Editor    
     Search On => List Git Alis
 
-    
+  Key Genrator [Puble Key || ssh] => Secure shell
+  ssh-keygen -t rsa -b 4096 -C "Your_Email" => Make Public Key
+  Go Setting SSH  Make New, Title It 
+  To Get Key You Must Display Conent By Programe | Command [cat file In Git_Bash]
+  id_rsa.pub => Name Of Public Key
+
+
+      ssh -T git@github.com =>    To Test Key_Generator, Connect With Git_Hub 
 
 
 
