@@ -5,7 +5,7 @@
     git reset head file_name
     git commit -m "message here"
     git push remote_name  local_branch_name
-
+----------------------------------------------------------------------------------
 
     git remote      -v    get remote_name Repo
     git branch            get Branches on your local Repo 
@@ -18,8 +18,7 @@
 
     Delete You Must Not Exist In It To Delete
     Rename You Must Exist In It To Rename
-
-    
+----------------------------------------------------------------------------------    
 
     git config -- global --edit  To Configurate Or Set Settings In Editors
     git config -l | --list       To List Configure
@@ -30,6 +29,8 @@
     git config --global key.value => user.email "" To Unset Setting | Make It Empty
     git config --global --unset key.value          To Unset Setting | Make It Empty 
 
+----------------------------------------------------------------------------------
+
     To Edit On Aliases In CommandLine
       git config --global alias.shortcuts command | "command if there is a space"
         => git config --global alias.st status 
@@ -37,15 +38,16 @@
     To Edit In Editor
       git config --global --edit => To Edit In Editor    
     Search On => List Git Alis
+----------------------------------------------------------------------------------
 
   Key Genrator [Puble Key || ssh] => Secure shell
+
   ssh-keygen -t rsa -b 4096 -C "Your_Email" => Make Public Key
   Go Setting SSH  Make New, Title It 
   To Get Key You Must Display Conent By Programe | Command [cat file In Git_Bash]
   id_rsa.pub => Name Of Public Key
-
-
-      ssh -T git@github.com =>    To Test Key_Generator, Connect With Git_Hub 
+  ssh -T git@github.com =>    To Test Key_Generator, Connect With Git_Hub 
+----------------------------------------------------------------------------------
 
 
 
