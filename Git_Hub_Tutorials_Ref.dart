@@ -48,7 +48,25 @@
   id_rsa.pub => Name Of Public Key
   ssh -T git@github.com =>    To Test Key_Generator, Connect With Git_Hub 
 ----------------------------------------------------------------------------------
+  Stash
 
+  git stash => after add Stage Area
 
+  Msg Of Stash Comes From Commits
+  git stash save "Msg For Stasch" => after add Stage Area
+  
+  ls Will Not Appear & ls -a To Appear
+  
+  git stash list => Lists Stashes
+  git stach show 
+  
+  git stash pop => remove from stash and ready to be comitted
+  git stash drop => remove from stash and add contents to be commited
+  git stash apply => make a copy add andcontents to be commited
+  pop | drop | apply => all Work on the last ele if do not specify
+  git stash [drop|pop|apply] stash@{Index} => If u Want Specifc Stash
 
+  git stash clear => Remove Forever
+  
+  git pull origin master case if there is edits do that and push
 */
