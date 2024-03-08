@@ -99,15 +99,24 @@ Tags
     You Know Remove && Create Release
     You Can Download
     
-    Git_Hub_Advices Vid_20
+    Git_Hub_Advices  Vid_20
         Apply Git_Hub
         Git Version Control cookBook
         Save Your Work, Backup
         Artilce, Refrences, Notices About GitHub On The Website Of Elzero
 
+    Git_Hub_Notes
+        Create Repo For Every Project
+        Create A New Branch For Every Feature Or Enhancement 
+        No Need To Connect To Remote Repo When Working
+        Any One Pull, push Addend On Permissions
+        Words => [Repo, Branch, Local Repo, Remote Repo,Clone[From Local | Remote],
+         Commit[SnapShot| CheckPoint In Your Local Repo], Push, Pull, Pull Request]
 
-    
-     
+
+
+
+
 
     
     
@@ -115,5 +124,5 @@ Tags
     
     
 -------------------------------------------------------------
----------------------
+
 */
