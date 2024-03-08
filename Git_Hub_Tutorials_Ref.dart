@@ -50,23 +50,70 @@
 ----------------------------------------------------------------------------------
   Stash
 
-  git stash => after add Stage Area
+      git stash => after add Stage Area
 
-  Msg Of Stash Comes From Commits
-  git stash save "Msg For Stasch" => after add Stage Area
-  
-  ls Will Not Appear & ls -a To Appear
-  
-  git stash list => Lists Stashes
-  git stach show 
-  
-  git stash pop => remove from stash and ready to be comitted
-  git stash drop => remove from stash and add contents to be commited
-  git stash apply => make a copy add andcontents to be commited
-  pop | drop | apply => all Work on the last ele if do not specify
-  git stash [drop|pop|apply] stash@{Index} => If u Want Specifc Stash
+      Msg Of Stash Comes From Commits
+      git stash save "Msg For Stasch" => after add Stage Area
 
-  git stash clear => Remove Forever
-  
-  git pull origin master case if there is edits do that and push
+      ls Will Not Appear & ls -a To Appear
+
+      git stash list => Lists Stashes
+      git stach show 
+
+      git stash pop => remove from stash and ready to be comitted
+      git stash drop => remove from stash and add contents to be commited
+      git stash apply => make a copy add andcontents to be commited
+      pop | drop | apply => all Work on the last ele if do not specify
+      git stash [drop|pop|apply] stash@{Index} => If u Want Specifc Stash
+      git stash clear => Remove All Stashes Forever
+
+      git pull origin master case if there is edits do that and push
+----------------------------------------------------------------------------------
+
+Ignore Files && Directories 
+
+   Make File Named .gitignore.git
+   Put In It All You Want To Ignore To Be Add Or Comitted  
+   file You Want           => Name Of It Directly
+   Files OF Extensions     => *Extension
+   Excespt Files | File    => !file.exe
+   Folder                  => Folder_Path/ | Folder_Name/
+   Search In Goolge About  => [git ignore patterns]
+   git add [-f | --force] File_Name => If You Want forcely Add File To Stage Area 
+-------------------------------------------------------------
+
+Tags 
+    Tag Created After Push To Ditinguish Your Work
+    You Can Download Every Release Alone
+    Msg Is Token From Commit
+    git tag   =>show your tags
+    git tag   =>name_tag_will_Be_Created
+    To Create Msg  [-a => Type, -m => Msg]
+      git tag -a name_Tag -m "Msg Here"
+    git push remote_repo  Tag_Name    Push Tag
+    git tag -l | --list "v1.*" => Lists Tags If You Have Many Tags Or Want Some Thing
+    Notice List Is With Specific Pattern , git tag To Show All Only With One Pattern
+    git push remote_Repo  --delete  Name_Tag => Delete Tag Remotely
+    git tag -d Tag_Name   => Delete Tag Locally
+    Locally Tag && Remotly Is Not Connected;
+    You Know Remove && Create Release
+    You Can Download
+    
+    Git_Hub_Advices Vid_20
+        Apply Git_Hub
+        Git Version Control cookBook
+        Save Your Work, Backup
+        Artilce, Refrences, Notices About GitHub On The Website Of Elzero
+
+
+    
+     
+
+    
+    
+    
+    
+    
+-------------------------------------------------------------
+---------------------
 */
