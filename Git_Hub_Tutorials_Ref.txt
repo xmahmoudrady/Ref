@@ -23,7 +23,7 @@
     git config -- global --edit  To Configurate Or Set Settings In Editors
     git config -l | --list       To List Configure
     git config -l --show-origin  To Show From Where Git_Hub Get Data
-    git config help              Open Manual Of Git_Hub 
+    git config --help              Open Manual Of Git_Hub 
     git config --global key.value => user.email  [Get] Settings In CommandLine
     git config --global key.value => user.email "Value" [Set] Settings In CommandLine
     git config --global key.value => user.email "" To Unset Setting | Make It Empty
@@ -83,34 +83,42 @@ Ignore Files && Directories
 -------------------------------------------------------------
 
 Tags 
+
     Tag Created After Push To Ditinguish Your Work
     You Can Download Every Release Alone
     Msg Is Token From Commit
+
     git tag   =>show your tags
     git tag   =>name_tag_will_Be_Created
+
     To Create Msg  [-a => Type, -m => Msg]
       git tag -a name_Tag -m "Msg Here"
     git push remote_repo  Tag_Name    Push Tag
+
     git tag -l | --list "v1.*" => Lists Tags If You Have Many Tags Or Want Some Thing
+
     Notice List Is With Specific Pattern , git tag To Show All Only With One Pattern
     git push remote_Repo  --delete  Name_Tag => Delete Tag Remotely
     git tag -d Tag_Name   => Delete Tag Locally
     Locally Tag && Remotly Is Not Connected;
+
     You Know Remove && Create Release
     You Can Download
     
     Git_Hub_Advices  Vid_20
         Apply Git_Hub
         Git Version Control cookBook
-        Save Your Work, Backup
+	======================Save Your Work, Backup======================
         Artilce, Refrences, Notices About GitHub On The Website Of Elzero
 
     Git_Hub_Notes
         Create Repo For Every Project
         Create A New Branch For Every Feature Or Enhancement 
         No Need To Connect To Remote Repo When Working
+	if You Forget Some Thing it prefers Commit More ONe Not Push More One
         Any One Pull, push Addend On Permissions
-        Words => [Repo, Branch, Local Repo, Remote Repo,Clone[From Local | Remote],
+        
+	Words => [Repo, Branch, Local Repo, Remote Repo,Clone[From Local | Remote],
          Commit[SnapShot| CheckPoint In Your Local Repo], Push, Pull, Pull Request]
 
 
