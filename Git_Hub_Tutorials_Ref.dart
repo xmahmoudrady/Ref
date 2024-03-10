@@ -83,7 +83,7 @@ Ignore Files && Directories
 -------------------------------------------------------------
 
 Tags 
-    Tag Created After Push To Ditinguish Your Work
+    Tag Created After Push To Ditinguish Your Work 
     You Can Download Every Release Alone
     Msg Is Token From Commit
     git tag   =>show your tags
