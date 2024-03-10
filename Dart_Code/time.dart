@@ -1,3 +1,35 @@
+/*
+
+      var t = DateTime.utc(year);
+      var t = DateTime.now();
+      var t4 = DateTime.now().timeZoneOffset;
+      var t4 = DateTime.now().timeZoneName;
+      var t = DateTime.now(day
+                           weekday
+                           month
+                           year
+                           hour
+                           minute
+                           second);
+      
+      
+      print(t2.isUtc);
+      print(tx.toUtc());
+      var tx = t2.toLocal();
+
+      print(t5.compareTo(t3));
+      print(t5.difference(t3));
+      print(t5.isAtSameMomentAs(t3));
+      print(t5.isAfter(t3));
+
+      print(t5.subtract(Duration(days: 2,hours: 2)));
+      var t5 = t3.add(Duration(  days: 3, hours: 3));
+
+      print(t5.toIso8601String());
+      var parse = DateTime.parse("2024-9-19");
+      var parse = DateTime.tryParse("2024-9-19");
+*/
+  var t4 = DateTime.now().timeZoneOffset;
 void main() {
   
   // var t1 = DateTime(2022);
@@ -40,7 +72,6 @@ void main() {
   // print(tx.toUtc); // why error [Closure]
   // print(t2.toLocal().toUtc);
   // var parse = DateTime.parse("2024-09-19");
-  // var parse = DateTime.parse("2024-9-19");
   var parse = DateTime.tryParse("2024-9-19");
   print(parse);
   String bd = DateTime.tryParse(stdin.readLineSync()!);

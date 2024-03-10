@@ -20,7 +20,7 @@ void main() {
 
 */
 
-int num? = stdin.readLineSync();
+int? num = int.parse(stdin.readLineSync()!);
 
 
 }

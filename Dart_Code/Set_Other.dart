@@ -1,3 +1,13 @@
+/*
+    Not Repeat
+    x.difference(y)
+    y.difference(x)
+    x.intersection(y)
+    x.union(y)
+    x.clear()
+    y.clear()
+
+*/
 void main() {
   Set a = {"a","b",'c','d',1,2,3,4};
   Set b = {"a","b",'x','z',1,2,9,10};

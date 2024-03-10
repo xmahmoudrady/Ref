@@ -1,4 +1,6 @@
 void main() {
+  // final, const, dynamic, var, type
+  // Final && Const Mention Two Differences
   var x;
   x = 5;
   x = "love";
