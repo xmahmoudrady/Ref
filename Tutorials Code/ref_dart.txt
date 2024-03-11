@@ -1,0 +1,101 @@
+------------------------------------------------
+Dart Require Windows 10 At Least And PowerShell
+Not Work On All Unix Distributions || OS
+Notice Intellij Editor
+
+#First Download Choco
+Choco install dart-sdk
+Choco upgrade dart-sdk
+
+Dark To Work Download Dart Extension In VSCode Then Code Runner Extension
+
+#Dart.dev => Website && 2011 && After c, java, kotlin Is Better Than Kivy
+Does Not Come With Editor
+#try a codelab
+#dart.dev/#try-sdk => online Compile Editor 
+#snapcraft.io => any app You Want On Linux
+------------------------------------------------
+Sma Coding
+void main() {
+All Thing Must Be Excuted Inside main, OutSide Will Not
+}
+print();
+[;] Must Put ; in The End 
+Must Save Your Code
+caseSensitive Letters
+Binary Program Does Not Contain main  => make Run And Debug 
+    Because This The First Time i use dart
+"\n" => New Line
+Code Excuted From Top To Below Not Ashwaaey but [Ordered]
+create prog that draw mosallas And F Letter
+------------------------------------------------
+------------------------------------------------
+Data Types => int, double, String, Bool[true,false] Then decide, Null
+Variables Rules 
+    [Must Its Type First] => int num = 5;
+    You Can Not Change Its Type_OF_Value
+
+Benifits From Variable
+------------------------------------------------
+------------------------------------------------
+What Is Asci Table For English Only [a-z],[A-Z],[0-9], Controls Key
+ [256 value only in the Asci Table] Not Arabic, Kory, japan, Emoji
+utf-8, utf-16, utf-32 [For Emoji] What Is The Difference
+Format String || FString => '${}' || in py 'f{}'
+String.[isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
+        trim(),indexOf() codeUnits{Return List},replaceAll(,),
+        split("pattern), substring(), codeUnitAt(Index)        
+]
+num.toString()
+any range not include the end such as substring [often]
+UpperCase, LowerCase Do Not Effect on The Origin, memory, only face
+codeUnits For One Element Not Some Of Element
+------------------------------------------------
+------------------------------------------------
+num. [ isEven, isOdd, isNegative, sign] => all This Is Prop Not Func
+sign if num is Postive  Will Return 1
+sign if num is Negative Will Return -1
+sign if num is = 0  Will Return 0
+Here You Must Impot "dart: math"
+num.[ ceil(), floor(), round(), abs(), compareTo(other_Num),
+      remainder(other_Num), toInt(),  toDouble(), truncate()    
+      ]
+      compare If > Will Return 1
+      compare If < Will Return -1
+      compare If == Will Return 0
+------------------------------------------------
+List name = [   Any value untill Null]
+List<type> name = [only type But You Can Not Put null_value] 
+
+#List_3 = [ , , ,...List_1 ];
+print(List, List[Index])
+
+List.[ 
+       length, last, first, isEmpty, isNotEmpty,
+       reversed, reversed.toList(), getRange(start,end),
+       sublist(start,end),
+
+       whereType<type>() =>  List x.whereType<String>(), 
+       #first[w Or W]here( (var) => Condition )  => (i) => i > 3    
+       #last [w Or W]here( (var) => Condition )  => (i) => i > 3    
+ ]
+
+ List.[add(), addAll([]),
+       remove(value), removeAt(Index),
+       removeRange(start, end), rmoveLast();
+       insert(Index,e), insertAll(index, []),
+ ]
+------------------------------------------------
+
+
+------------------------------------------------
+------------------------------------------------
+
+
+
+
+
+
+
+
+
