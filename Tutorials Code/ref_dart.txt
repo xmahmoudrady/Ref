@@ -1,5 +1,6 @@
-Dart Intro && Dart Basic && Data Types && Strings && Numbers && Set && Lists && F_String &&
-Null Safety && Time && Variables[Final,Const,var,dynamic,type], Constants && 
+Dart Intro && Dart Basics && Data Types && Strings[Func] && Numbers[Func] && Set && Lists && 
+F_String && Null Safety && Time && Variables[Final,Const,var,dynamic,type], Constants && Concatination
+Math_Ope && If, Else If, Else && 
 ------------------------------------------------
 ------------------------------------------------
 Dart Intro
@@ -31,10 +32,10 @@ print();
 [;] Must Put ; in The End 
 Must Save Your Code
 caseSensitive Letters
+Code Execution From Top To Below Not Ashwaaey but [Ordered]
 Binary Program Does Not Contain main  => make Run And Debug 
     Because This The First Time i use dart
 "\n" => New Line
-Code Execution From Top To Below Not Ashwaaey but [Ordered]
 create prog that draw mosallas And F Letter
 ------------------------------------------------
 ------------------------------------------------
@@ -50,30 +51,41 @@ Data_Types
 What Is Asci Table For English Only [a-z],[A-Z],[0-9], Controls Key
  [256 value only in the Asci Table] Not Arabic, Kory, japan, Emoji
 utf-8, utf-16, utf-32 [For Emoji] What Is The Difference
-Strings
-  Format String || FString => '${}' || in py 'f{}'
 
-  String.[isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
-          trim(),indexOf() codeUnits{Return List},replaceAll(,),
-          split("pattern), substring(), codeUnitAt(Index)        
+Strings
+  Format String || FString => '${}' ||  'f{}' in py
+
+  String.[
+               isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
+               trim(),indexOf() codeUnits{Return List},replaceAll(,),
+               split("pattern), substring(), codeUnitAt(Index)        
   ]
   
   num.toString()
 
-  any range not include the end such as substring [often]
-  UpperCase, LowerCase Do Not Effect on The Origin, memory, only face
-  codeUnits For One Element Not Some Of Element
+ - any range not include the end such as substring [often]
+ - UpperCase, LowerCase Do Not Effect on The Origin, memory, only face
+ - What Is The Different Between      [ codeUnitAt(i), codeUnits ]
+ - codeUnits Is Prop Without () && For  One Char
+ - codeUnitAt(i) Is Func With () && For  Element
+
+ - CodeUnits For One Element Not Some Of Element
 ------------------------------------------------
 ------------------------------------------------
 NUmbers
-  num. [ isEven, isOdd, isNegative, sign] => all This Is Prop Not Func
+  num.[
+             isEven, isOdd, isNegative, sign
+  ]          // all This Is Prop Not Func
+
   sign if num is Postive  Will Return 1
   sign if num is Negative Will Return -1
   sign if num is = 0  Will Return 0
-  Here You Must Impot "dart: math"
-  num.[ ceil(), floor(), round(), abs(), compareTo(other_Num),
-      remainder(other_Num), toInt(),  toDouble(), truncate()    
-      ]
+
+  Here You Must Import "dart: math"
+  num.[ 
+             ceil(), floor(), round(), abs(), compareTo(other_Num),
+             remainder(other_Num), toInt(),  toDouble(), truncate()    
+  ]
       compare If > Will Return 1
       compare If < Will Return -1
       compare If == Will Return 0
@@ -87,30 +99,31 @@ Lists
   print(List, List[Index])
   
   List.[ 
-         length, last, first, isEmpty, isNotEmpty,
-         reversed, reversed.toList(), getRange(start,end),
-         sublist(start,end),
+           length, last, first, isEmpty, isNotEmpty,
+           reversed, reversed.toList(), getRange(start,end),
+           sublist(start,end),
   
-         whereType<type>() =>  List x.whereType<String>(), 
-         #first[w Or W]here( (var) => Condition )  => (i) => i > 3    
-         #last [w Or W]here( (var) => Condition )  => (i) => i > 3    
-   ]
+          whereType<type>() =>  List x.whereType<String>(), 
+          #first[w Or W]here( (var) => Condition )  => (i) => i > 3    
+          #last [w Or W]here( (var) => Condition )  => (i) => i > 3    
+  ]
 
-  List.[add(), addAll([]),
-       remove(value), removeAt(Index),
-       removeRange(start, end), rmoveLast();
-       insert(Index,e), insertAll(index, []),
+  List.[
+           add(), addAll([]),
+           remove(value), removeAt(Index),
+           removeRange(start, end), rmoveLast();
+           insert(Index,e), insertAll(index, []),
   ]
 ------------------------------------------------
 ------------------------------------------------
   Set
-     #Not Repeat
-     x.difference(y)
-     y.difference(x)
-     x.intersection(y)
-     x.union(y) => Without Repeat And With Order [b then a]
-     x.clear()
-     y.clear()
+       #Not Repeat
+       x.difference(y)
+       y.difference(x)
+       x.intersection(y)
+       x.union(y) => Without Repeat And With Order [b then a]
+       x.clear()
+       y.clear()
 	 you can not print empty كانك بتقول له اطبع التفريغ
      	// will return error closure => void from func 'clear'
 	 print(a.clear); // why not work clear
@@ -183,11 +196,27 @@ Variables && Constant
 	  dynamic l = "love";
 ------------------------------------------------
 ------------------------------------------------
+If, Else If, Else 
+
+ 1- go do Or done
+ 2- Check
+ 3- Make A Decision
+ 
+  if (Condition) {Code}
+  else if (Condition) {Code}	
+  else {Code}
 
 ------------------------------------------------
 ------------------------------------------------
-
-
+Math Ope
+  +, -, ++, --, *, **, /, %
+  ++, -- After And Before 
+  "Word" * Num  Will Make Repeatation => "Ali" * 3 == AliAliAli
+  Priority () then Pow Then *,/ then +,- =>    -(a + b)  &&  -a + b
+------------------------------------------------
+------------------------------------------------
+ConCate
+  + | $ | ${}  
 ------------------------------------------------
 ------------------------------------------------
 
