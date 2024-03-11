@@ -1,24 +1,32 @@
+Dart Intro && Dart Basic && Data Types && Strings && Numbers && Set && Lists && F_String &&
+Null Safety && Time && Variables[Final,Const,var,dynamic,type], Constants && 
 ------------------------------------------------
-Dart Require Windows 10 At Least And PowerShell
-Not Work On All Unix Distributions || OS
-Notice Intellij Editor
-
-#First Download Choco
-Choco install dart-sdk
-Choco upgrade dart-sdk
-
-Dark To Work Download Dart Extension In VSCode Then Code Runner Extension
-
-#Dart.dev => Website && 2011 && After c, java, kotlin Is Better Than Kivy
-Does Not Come With Editor
-#try a codelab
-#dart.dev/#try-sdk => online Compile Editor 
-#snapcraft.io => any app You Want On Linux
 ------------------------------------------------
+Dart Intro
+  Dart Require Windows 10 At Least And PowerShell
+  Not Work On All Unix Distributions || OS
+  #Dart.dev => Website && 2011 && After c, java, kotlin Is Better Than Kivy
+  Does Not Come With Editor
+  #try a codelab
+  #dart.dev/#try-sdk => online Compile Editor 
+  
+  #snapcraft.io => any app You Want On Linux
+  Notice Intellij Editor
+
+  # To Download Sdk => First Download Choco
+  Choco install dart-sdk
+  Choco upgrade dart-sdk
+  
+  # Dark To Work Download Dart Extension In VSCode Then Code Runner Extension
+
+------------------------------------------------
+------------------------------------------------
+Dart_Basic
 Sma Coding
 void main() {
-All Thing Must Be Excuted Inside main, OutSide Will Not
+All Thing Must Be Excuted Inside main, OutSide Will Not Be Executed
 }
+
 print();
 [;] Must Put ; in The End 
 Must Save Your Code
@@ -26,65 +34,157 @@ caseSensitive Letters
 Binary Program Does Not Contain main  => make Run And Debug 
     Because This The First Time i use dart
 "\n" => New Line
-Code Excuted From Top To Below Not Ashwaaey but [Ordered]
+Code Execution From Top To Below Not Ashwaaey but [Ordered]
 create prog that draw mosallas And F Letter
 ------------------------------------------------
 ------------------------------------------------
-Data Types => int, double, String, Bool[true,false] Then decide, Null
-Variables Rules 
+Data_Types
+  Data Types => int, double, String, Bool[true,false] Then decide, Null
+  Variables Rules 
     [Must Its Type First] => int num = 5;
     You Can Not Change Its Type_OF_Value
 
-Benifits From Variable
+    Benifits Of Variables
 ------------------------------------------------
 ------------------------------------------------
 What Is Asci Table For English Only [a-z],[A-Z],[0-9], Controls Key
  [256 value only in the Asci Table] Not Arabic, Kory, japan, Emoji
 utf-8, utf-16, utf-32 [For Emoji] What Is The Difference
-Format String || FString => '${}' || in py 'f{}'
-String.[isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
-        trim(),indexOf() codeUnits{Return List},replaceAll(,),
-        split("pattern), substring(), codeUnitAt(Index)        
-]
-num.toString()
-any range not include the end such as substring [often]
-UpperCase, LowerCase Do Not Effect on The Origin, memory, only face
-codeUnits For One Element Not Some Of Element
+Strings
+  Format String || FString => '${}' || in py 'f{}'
+
+  String.[isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
+          trim(),indexOf() codeUnits{Return List},replaceAll(,),
+          split("pattern), substring(), codeUnitAt(Index)        
+  ]
+  
+  num.toString()
+
+  any range not include the end such as substring [often]
+  UpperCase, LowerCase Do Not Effect on The Origin, memory, only face
+  codeUnits For One Element Not Some Of Element
 ------------------------------------------------
 ------------------------------------------------
-num. [ isEven, isOdd, isNegative, sign] => all This Is Prop Not Func
-sign if num is Postive  Will Return 1
-sign if num is Negative Will Return -1
-sign if num is = 0  Will Return 0
-Here You Must Impot "dart: math"
-num.[ ceil(), floor(), round(), abs(), compareTo(other_Num),
+NUmbers
+  num. [ isEven, isOdd, isNegative, sign] => all This Is Prop Not Func
+  sign if num is Postive  Will Return 1
+  sign if num is Negative Will Return -1
+  sign if num is = 0  Will Return 0
+  Here You Must Impot "dart: math"
+  num.[ ceil(), floor(), round(), abs(), compareTo(other_Num),
       remainder(other_Num), toInt(),  toDouble(), truncate()    
       ]
       compare If > Will Return 1
       compare If < Will Return -1
       compare If == Will Return 0
 ------------------------------------------------
-List name = [   Any value untill Null]
-List<type> name = [only type But You Can Not Put null_value] 
+------------------------------------------------
+Lists
+  List name = [   Any value untill Null]
+  List<type> name = [only type But You Can Not Put null_value] 
+  
+  #List_3 = [ , , ,...List_1 ];
+  print(List, List[Index])
+  
+  List.[ 
+         length, last, first, isEmpty, isNotEmpty,
+         reversed, reversed.toList(), getRange(start,end),
+         sublist(start,end),
+  
+         whereType<type>() =>  List x.whereType<String>(), 
+         #first[w Or W]here( (var) => Condition )  => (i) => i > 3    
+         #last [w Or W]here( (var) => Condition )  => (i) => i > 3    
+   ]
 
-#List_3 = [ , , ,...List_1 ];
-print(List, List[Index])
-
-List.[ 
-       length, last, first, isEmpty, isNotEmpty,
-       reversed, reversed.toList(), getRange(start,end),
-       sublist(start,end),
-
-       whereType<type>() =>  List x.whereType<String>(), 
-       #first[w Or W]here( (var) => Condition )  => (i) => i > 3    
-       #last [w Or W]here( (var) => Condition )  => (i) => i > 3    
- ]
-
- List.[add(), addAll([]),
+  List.[add(), addAll([]),
        remove(value), removeAt(Index),
        removeRange(start, end), rmoveLast();
        insert(Index,e), insertAll(index, []),
- ]
+  ]
+------------------------------------------------
+------------------------------------------------
+  Set
+     #Not Repeat
+     x.difference(y)
+     y.difference(x)
+     x.intersection(y)
+     x.union(y) => Without Repeat And With Order [b then a]
+     x.clear()
+     y.clear()
+	 you can not print empty كانك بتقول له اطبع التفريغ
+     	// will return error closure => void from func 'clear'
+	 print(a.clear); // why not work clear
+
+other_Func For Set Such As Lists
+       List x = [];
+  print(name.length);
+  print("--------\n");
+  print(name.add(100));
+  print(name.add(['love',"wael"]));
+  print(name.remove("love")); // Will Not Remove
+  print(name.remove(11));
+  // print(name.addAll([200,300])); // why error
+  // print(name.elementAt(0));
+  // print(name.elementAt(-1)); // error
+  // print(name.elementAt(name.length -1));
+  // print("alia".hashCode); 
+  // print("alai".hashCode); 
+  // print("amir".hashCode); 
+  // print(name.elementAt(name.length -1).hashCode);
+ 
+
+
+------------------------------------------------
+------------------------------------------------
+  Time
+      var t = DateTime.utc(year); => Get Time By Utc(Z) =>  
+      var t = DateTime.now(); => Get Time Now
+      var t4 = DateTime.now().timeZoneName;	
+      var t4 = DateTime.now().timeZoneOffset;
+
+      var t = DateTime.now(day
+                           weekday
+                           month
+                           year
+                           hour
+                           minute
+                           second);
+      
+      
+      print(t2.isUtc);
+      print(tx.toUtc());
+      var tx = t2.toLocal();
+
+      print(t5.compareTo(t3));
+      print(t5.difference(t3));
+      print(t5.isAtSameMomentAs(t3));
+      print(t5.isAfter(t3));
+
+      print(t5.subtract(Duration(days: 2,hours: 2)));
+      var t5 = t3.add(Duration(  days: 3, hours: 3));
+
+      print(t5.toIso8601String()); => Convert Number_Time Into String_Time 
+      var parse = DateTime.parse("2024-9-19");
+      var parse = DateTime.tryParse("2024-9-19"); // If Wrong_Format Will Return Null And   
+------------------------------------------------
+------------------------------------------------
+  
+  // Null Safety
+  // ? When Store Empty Value Into A Var
+  // ! When Make An Ope Such Print, Functions On It
+  // print(a.bitLength); // error Compiled Time
+  int? a;
+  print(a!.bitLength); // error Run Time
+------------------------------------------------
+------------------------------------------------
+Variables && Constant
+	  // final, const, dynamic, var, type
+	  // Final && Const Mention Two Differences
+	  dynamic l = "love";
+------------------------------------------------
+------------------------------------------------
+
+------------------------------------------------
 ------------------------------------------------
 
 
@@ -92,10 +192,18 @@ List.[
 ------------------------------------------------
 
 
+------------------------------------------------
+------------------------------------------------
 
+------------------------------------------------
+------------------------------------------------
 
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
 
-
-
-
-
+------------------------------------------------
+------------------------------------------------
