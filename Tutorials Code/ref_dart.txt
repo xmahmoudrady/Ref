@@ -1,12 +1,17 @@
-Dart Intro && Dart Basics && Data Types && Strings[Func] && Numbers[Func] && Set && Lists && 
-F_String && Null Safety && Time && Variables[Final,Const,var,dynamic,type], Constants && Concatination
-Math_Ope && If, Else If, Else && 
+           ----------------With Sma Coding----------------
+
+- Dart Intro && Dart Basics && Data Types && Strings[Func] &&
+- Numbers[Func] && User_Inputs && Set && Lists && F_String &&
+- Null Safety && Time && Variables[Final,Const,var,dynamic,type], Constants &&
+- Concatination && Math_Ope && If, Else If, Else && Switch, For[Both], While, do_while
+
 ------------------------------------------------
 ------------------------------------------------
 Dart Intro
+
   Dart Require Windows 10 At Least And PowerShell
   Not Work On All Unix Distributions || OS
-  #Dart.dev => Website && 2011 && After c, java, kotlin Is Better Than Kivy
+  #Dart.dev => Website && 2011 && After c, java, kotlin And Is Better Than Kivy
   Does Not Come With Editor
   #try a codelab
   #dart.dev/#try-sdk => online Compile Editor 
@@ -23,24 +28,26 @@ Dart Intro
 ------------------------------------------------
 ------------------------------------------------
 Dart_Basic
-Sma Coding
-void main() {
-All Thing Must Be Excuted Inside main, OutSide Will Not Be Executed
-}
 
-print();
-[;] Must Put ; in The End 
-Must Save Your Code
-caseSensitive Letters
-Code Execution From Top To Below Not Ashwaaey but [Ordered]
-Binary Program Does Not Contain main  => make Run And Debug 
-    Because This The First Time i use dart
-"\n" => New Line
-create prog that draw mosallas And F Letter
+  void main() {
+  All Thing Must Be Excuted Inside main, OutSide Will Not Be Executed
+  }
+
+  print();
+  [;] Must Put ; in The End 
+  Must Save Your Code
+  caseSensitive Letters
+  Code Execution From Top To Below Not Ashwaaey but [Ordered]
+  Binary Program Does Not Contain main  => make Run And Debug 
+      Because This The First Time i use dart
+  "\n" => New Line
+  create prog that draw mosallas And F Letter
 ------------------------------------------------
 ------------------------------------------------
 Data_Types
+
   Data Types => int, double, String, Bool[true,false] Then decide, Null
+  Double => 5 | 5.00 | 5.5
   Variables Rules 
     [Must Its Type First] => int num = 5;
     You Can Not Change Its Type_OF_Value
@@ -53,8 +60,8 @@ What Is Asci Table For English Only [a-z],[A-Z],[0-9], Controls Key
 utf-8, utf-16, utf-32 [For Emoji] What Is The Difference
 
 Strings
-  Format String || FString => '${}' ||  'f{}' in py
 
+  Format String || FString => '${}' ||  'f{}' in 
   String.[
                isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
                trim(),indexOf() codeUnits{Return List},replaceAll(,),
@@ -72,7 +79,8 @@ Strings
  - CodeUnits For One Element Not Some Of Element
 ------------------------------------------------
 ------------------------------------------------
-NUmbers
+Numbers
+
   num.[
              isEven, isOdd, isNegative, sign
   ]          // all This Is Prop Not Func
@@ -91,7 +99,20 @@ NUmbers
       compare If == Will Return 0
 ------------------------------------------------
 ------------------------------------------------
+Users_Inputs
+  What Is Stream, Inputs
+  Notice Null Safety Here
+  Variable With No Value Make Errors
+  readLineSync() => Is A Sync Functions, All Prog Stops Utill be Executed
+  Sync Funcs Ends With Sync();
+
+  stdin.readLineSync() => Recieve Inputs
+  stdou.write()        => Print OutPuts
+  stdou.writeln()      => Print OutPuts 
+------------------------------------------------
+------------------------------------------------
 Lists
+
   List name = [   Any value untill Null]
   List<type> name = [only type But You Can Not Put null_value] 
   
@@ -111,42 +132,35 @@ Lists
   List.[
            add(), addAll([]),
            remove(value), removeAt(Index),
-           removeRange(start, end), rmoveLast();
+           removeRange(start, end), removeLast();
            insert(Index,e), insertAll(index, []),
   ]
 ------------------------------------------------
 ------------------------------------------------
   Set
+
+       Set Accepts other_Funcs Such As Lists But There Are Some Differences
        #Not Repeat
+       # To Get Ele By => set_Name.elementAt(Index)
+       # To Get Last Ele Not Use I = -1 But => name.length -1
        x.difference(y)
        y.difference(x)
        x.intersection(y)
        x.union(y) => Without Repeat And With Order [b then a]
+
        x.clear()
        y.clear()
-	 you can not print empty كانك بتقول له اطبع التفريغ
-     	// will return error closure => void from func 'clear'
-	 print(a.clear); // why not work clear
-
-other_Func For Set Such As Lists
-       List x = [];
-  print(name.length);
-  print("--------\n");
-  print(name.add(100));
-  print(name.add(['love',"wael"]));
-  print(name.remove("love")); // Will Not Remove
-  print(name.remove(11));
-  // print(name.addAll([200,300])); // why error
-  // print(name.elementAt(0));
-  // print(name.elementAt(-1)); // error
-  // print(name.elementAt(name.length -1));
-  // print("alia".hashCode); 
-  // print("alai".hashCode); 
-  // print("amir".hashCode); 
-  // print(name.elementAt(name.length -1).hashCode);
- 
-
-
+	     you can not print empty كانك بتقول له اطبع التفريغ
+     	 will return error closure => void from func 'clear'
+	     print(a.clear); // why not work clear
+       length, add, remove, addAll, elementAt, hasCode, name.length -1
+       Probelms With add, remove {List}
+       
+       name.add(['love',"wael"])
+       name.remove("love")    // Will Not Remove
+       name.addAll([200,300]) // why error
+       name.elementAt(name.length -1);
+       
 ------------------------------------------------
 ------------------------------------------------
   Time
@@ -182,26 +196,28 @@ other_Func For Set Such As Lists
 ------------------------------------------------
 ------------------------------------------------
   
-  // Null Safety
-  // ? When Store Empty Value Into A Var
-  // ! When Make An Ope Such Print, Functions On It
-  // print(a.bitLength); // error Compiled Time
-  int? a;
-  print(a!.bitLength); // error Run Time
+   Null Safety
+
+     ? When Store Empty Value Into A Var
+     ! When Make An Ope Such Print, Functions On It
+     print(a.bitLength); // error Compiled Time
+     int? a;
+     print(a!.bitLength); // error Run Time
 ------------------------------------------------
 ------------------------------------------------
 Variables && Constant
-	  // final, const, dynamic, var, type
-	  // Final && Const Mention Two Differences
-	  dynamic l = "love";
+
+	   final, const, dynamic, var, type
+	   Final && Const Mention Two Differences
+	   dynamic l = "love";
 ------------------------------------------------
 ------------------------------------------------
 If, Else If, Else 
 
- 1- go do Or done
- 2- Check
- 3- Make A Decision
- 
+  1- go do Or done
+  2- Check
+  3- Make A Decision
+  
   if (Condition) {Code}
   else if (Condition) {Code}	
   else {Code}
@@ -209,6 +225,7 @@ If, Else If, Else
 ------------------------------------------------
 ------------------------------------------------
 Math Ope
+
   +, -, ++, --, *, **, /, %
   ++, -- After And Before 
   "Word" * Num  Will Make Repeatation => "Ali" * 3 == AliAliAli
@@ -216,9 +233,38 @@ Math Ope
 ------------------------------------------------
 ------------------------------------------------
 ConCate
+
   + | $ | ${}  
 ------------------------------------------------
 ------------------------------------------------
+For
+
+  For( type Variable  List || Thing ) {Code}
+  for(Start, End || Condition, Step) {Code}
+
+While
+
+  Initial Variable
+  while(Conditon) { Code}
+
+do_while
+
+  Initial Variable
+  do{Code} while(Conditon);
+
+Switch
+
+  Not Include > | < | != See That
+  Initial Variable
+  Switch(Expression) {
+    case Number || String :
+    case Number || String :
+      code;
+      break;
+    default:
+      code;
+      break;
+  }
 
 
 ------------------------------------------------
