@@ -1,5 +1,6 @@
 void main() {
   Map map = {"name":"ali", true:"yes", 1:"Number"};
+  print("---------------\n");
   print(map);
   print("---------------\n");
   //----------------------------------

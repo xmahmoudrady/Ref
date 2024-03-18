@@ -1,0 +1,1 @@
+print(con.replaceAll(reg, "*"));

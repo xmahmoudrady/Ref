@@ -7,198 +7,211 @@
 
 ------------------------------------------------
 ------------------------------------------------
-Dart Intro
+# Dart Intro[ 1 ]
 
-  Dart Require Windows 10 At Least And PowerShell
-  Not Work On All Unix Distributions || OS
-  #Dart.dev => Website && 2011 && After c, java, kotlin And Is Better Than Kivy
-  Does Not Come With Editor
-  #try a codelab
-  #dart.dev/#try-sdk => online Compile Editor 
-  
-  #snapcraft.io => any app You Want On Linux
-  Notice Intellij Editor
+  # Dart Require Windows 10 At Least And PowerShell
+  # Not Work On All Unix Distributions || OS
+  # Dart.dev => Website 
+  # Created 2011 && After c, java, kotlin 
+  # Is Better Than Kivy
+  # Does Not Come With Editor
+
+  # dart.dev/#try-sdk => online Compile Editor 
+  # try a codelab  
+  # snapcraft.io => any app You Want On Linux
+  # Notice Intellij Editor
 
   # To Download Sdk => First Download Choco
-  Choco install dart-sdk
-  Choco upgrade dart-sdk
+     Choco install dart-sdk
+     Choco upgrade dart-sdk
   
+
+------------------------------------------------
+------------------------------------------------
+# Dart_Basis[ 2 ]
+
   # Dark To Work Download Dart Extension In VSCode Then Code Runner Extension
 
-------------------------------------------------
-------------------------------------------------
-Dart_Basic
-
-  void main() {
+  # void main() {
   All Thing Must Be Excuted Inside main, OutSide Will Not Be Executed
   }
 
-  print();
-  [;] Must Put ; in The End 
-  Must Save Your Code
-  caseSensitive Letters
-  Code Execution From Top To Below Not Ashwaaey but [Ordered]
-  Binary Program Does Not Contain main  => make Run And Debug 
-      Because This The First Time i use dart
-  "\n" => New Line
-  create prog that draw mosallas And F Letter
+  # print();
+  # [;] Must Put ; in The End 
+  # Must Save Your Code
+  # caseSensitive Letters
+  # Code Execution From Top To Below Not Ashwaaey but [Ordered]
+  # Binary Program Does Not Contain main  => make Run And Debug 
+  #     Because This The First Time i use dart
+  # "\n" => New Line
+  # create prog that draw mosallas And F Letter
 ------------------------------------------------
 ------------------------------------------------
-Data_Types
+# Data_Types[ 3 ]
 
-  Data Types => int, double, String, Bool[true,false] Then decide, Null
-  Double => 5 | 5.00 | 5.5
-  Variables Rules 
-    [Must Its Type First] => int num = 5;
-    You Can Not Change Its Type_OF_Value
+  # Data Types => int, double, String, Bool[true,false] Then decide, Null
+  # Double => 5 | 5.00 | 5.5
+  # Variables Rules From It Is :
+    - [Must Its Type First] => int num = 5;
+    - You Can Not Change Its Type_OF_Value
 
-    Benifits Of Variables
+    # Benifits Of Variables
 ------------------------------------------------
 ------------------------------------------------
-What Is Asci Table For English Only [a-z],[A-Z],[0-9], Controls Key
- [256 value only in the Asci Table] Not Arabic, Kory, japan, Emoji
-utf-8, utf-16, utf-32 [For Emoji] What Is The Difference
+# Strings[ 4 ] ?? someNotEnd ??
 
-Strings
-
-  Format String || FString => '${}' ||  'f{}' in 
-  String.[
-               isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
-               trim(),indexOf() codeUnits{Return List},replaceAll(,),
-               split("pattern), substring(), codeUnitAt(Index)        
-  ]
-  
-  num.toString()
-
- - any range not include the end such as substring [often]
- - UpperCase, LowerCase Do Not Effect on The Origin, Not Stored In memory, only face
+  # What Is Asci Table For English Only [a-z],[A-Z],[0-9],
+   Controls Key [256 value only in the Asci Table]
+   Not Arabic, Kory, japan, Emoji
+  # utf-8, utf-16, utf-32 [For Emoji] What Is The Difference
  
-- What Is The Different Between      [ codeUnitAt(i), codeUnits ]
- - codeUnits       Is Prop Without () &&   For  One Char
- - codeUnitAt(i) Is Func With () &&        For  Element
-
- - CodeUnits For One Element Not Some Of Element
-------------------------------------------------
-------------------------------------------------
-Numbers
-
-  num.[
-             isEven, isOdd, isNegative, sign
-  ]          // all This Is Prop Not Func
-
-  sign if num is Postive  Will Return 1
-  sign if num is Negative Will Return -1
-  sign if num is = 0  Will Return 0
-
-  Here You Must Import "dart: math"
-  num.[ 
-             ceil(), floor(), round(), abs(), compareTo(other_Num),
-             remainder(other_Num), toInt(),  toDouble(), truncate()    
-  ]
-      compare If > Will Return 1
-      compare If < Will Return -1
-      compare If == Will Return 0
-------------------------------------------------
-------------------------------------------------
-Users_Inputs
-  What Is Stream, Inputs????
-  Notice Null Safety Here
-  Variable With No Value Make Errors
-  readLineSync() => Is A Sync Functions, All Prog Stops Utill be Executed
-  Sync Funcs Ends With Sync();
-
-  stdin.readLineSync() => Recieve Inputs
-  stdout.write()             => Print OutPuts
-  stdout.writeln()         => Print OutPuts 
-------------------------------------------------
-------------------------------------------------
-Lists
-
-  List name = [   Any value untill Null]
-  List<type> name = [only type But You Can Not Put null_value] 
+  # Format String || FString => '${}' ||  'f{}' in 
+ 
+  # String.[
+           isEmpty, isNotEmpty, length, toLowerCase(), toUpperCase(),
+           trim(),indexOf() codeUnits{Return List},replaceAll(,),
+           split("pattern), substring(), codeUnitAt(Index)        
+   ]
+   
+  # num.toString()
+ 
+  # any range not include the end such as substring [often]
+  # UpperCase, LowerCase Do Not Effect on The Origin, Not Stored In memory, only face
   
-  #List_3 = [ , , ,...List_1,...List_2 ];
-  print(List, List[Index])
+  #  What Is The Different Between      [ codeUnitAt(i), codeUnits ]
+   - codeUnits     Is Prop Without () &&   For  One Char
+   - codeUnitAt(i) Is Func With ()    &&   For  Element
+   - CodeUnits For One Element Not Some Of Element
+------------------------------------------------
+------------------------------------------------
+# Numbers[ 5 ]
+
+  # num.[
+         isEven, isOdd, isNegative, sign
+  ]      // all This Is Prop Not Func
+
+  - sign if num is Postive  Will Return 1
+  - sign if num is Negative Will Return -1
+  - sign if num is = 0  Will Return 0
+
+  # Here You Must Import "dart: math"
+  # num.[ 
+         ceil(), floor(), round(), abs(), compareTo(other_Num),
+         remainder(other_Num), toInt(),  toDouble(), truncate()    
+    ]
+
+      - compare If > Will Return 1
+      - compare If < Will Return -1
+      - compare If == Will Return 0
+------------------------------------------------
+------------------------------------------------
+# Users_Inputs[ 6 ] ?? someNotEnd ??
+ 
+  # What Is Stream, Inputs????
+  # Notice Null Safety Here
+  # Variable With No Value Make Errors
+  # readLineSync() => Is A Sync Functions, All Prog Stops Utill be Executed
+   Sync Funcs Ends With Sync();
+
+  # stdin.readLineSync() => Recieve Inputs
+  # stdout.write()             => Print OutPuts
+  # stdout.writeln()         => Print OutPuts 
+------------------------------------------------
+------------------------------------------------
+# Lists[ 7 ] ?? someNotEnd ??
+
+  # List name = [   Any value untill Null]
+  # List<type> name = [only type But You Can Not Put null_value] 
   
-  List.[ 
-           length, last, first, isEmpty, isNotEmpty,
-           reversed, reversed.toList(), getRange(start,end),
-           sublist(start,end),
+  # List_3 = [ , , ,...List_1,...List_2 ];
+  # ...List_Name To Add List Inside Other List
+    You Can Add More List Inside Other
+  # print(List, List[Index])
   
+  # List.[ 
+          length, last, first, isEmpty, isNotEmpty,
+          reversed, reversed.toList(), getRange(start,end),
+          sublist(start,end),
+    
           whereType<type>() =>  List x.whereType<String>(), 
           #first[w Or W]here( (var) => Condition )  => (i) => i > 3    
           #last [w Or W]here( (var) => Condition )  => (i) => i > 3    
-  ]
+    ]
 
-  List.[
-           add(),  addAll([]),
-           remove(value),  removeAt(Index),
-           removeRange(start, end),	 removeLast();
-           insert(Index,e),  insertAll(index, []),
-  ]
+  # List.[
+          add(),  addAll([]),
+          remove(value),  removeAt(Index),
+          removeRange(start, end),	 removeLast();
+          insert(Index,e),  insertAll(index, []),
+    ]
+   # Effect On the Origin Var  
+       insert, insertAll, add, addAll,
+       remove, removeAt, removeRange, removeLast 
+  
 ------------------------------------------------
 ------------------------------------------------
-  Set
+  # Set[ 8 ] ?? someNotEnd ??
 
-       Set Accepts other_Funcs Such As Lists But There Are Some Differences
-       #Not Repeat
-       # To Get Ele By => set_Name.elementAt(Index)
-       # To Get Last Ele Not Use I = -1 But => name.length -1
-       x.difference(y)
-       y.difference(x)
-       x.intersection(y)
-       x.union(y) => Without Repeat And With Order [b then a]
-
-       x.clear()
-       y.clear()
-	     you can not print empty كانك بتقول له اطبع التفريغ
-     	 will return error closure => void from func 'clear'
-	     print(a.clear); // why not work clear
-
-       length, add, remove, addAll, elementAt, hasCode, name.length -1
-       Probelms With add, remove {List}
-       
-       name.add(['love',"wael"])
-       name.remove("love")    // Will Not Remove
-       name.addAll([200,300]) // why error
-       name.elementAt(name.length -1);
-       
+     # Its Format is set[keyword] name[NameOfSet] = {}
+     # Set Accepts other_Funcs Such As Lists such 
+     [first, last, length, contains] But There Are Some Differences
+     #Not Repeat
+     # To Get Ele By => set_Name.elementAt(Index)
+     # print(x.add()) // this is an error 
+        the correct is x.add(); && print the set not set.add()
+     # To Get Last Ele Not Use I = -1 But => name.length -1
+     x.difference(y)
+     y.difference(x)
+     x.intersection(y)
+     x.union(y) => Without Repeat And With Order [b then a ]
+     x.clear()
+     y.clear()
+	   you can not print empty كانك بتقول له اطبع التفريغ
+     will return error closure => void from func 'clear'
+	   print(a.clear); // why not work clea
+     length, add, remove, addAll, elementAt, hasCode, name.length -1
+     Probelms With add, remove {List}
+     
+     name.add(['love',"wael"])
+     name.remove("love")    // Will Not Remove
+     name.addAll([200,300]) // why error
+     name.elementAt(name.length -1);
+     
 ------------------------------------------------
 ------------------------------------------------
-  Time
-      var t = DateTime.utc(year); => Get Time By Utc(Z) =>  
-      var t = DateTime.now(); => Get Time Now
-      var t4 = DateTime.now().timeZoneName;	
-      var t4 = DateTime.now().timeZoneOffset;
+# Map[ 9 ]
 
-      var t = DateTime.now(day
-                           weekday
-                           month
-                           year
-                           hour
-                           minute
-                           second);
-      
-      
-      print(t2.isUtc);
-      print(tx.toUtc());
-      var tx = t2.toLocal();
+  # Map name = {Pairs => x : value, y: value};
+  # map.forEach((key,value) {print('${key} =>  ${value}');});
+  # key may String || Bool
+  # map_name.length
+  # To Edit Or Add Vaule To The Map
+   map_name['Key'] = Value
+  # To Get Length Of Key Make Next
+    Put key In Variable  Then Get Length =>
+    k = map_name[key]; print(k.length)
+  # map_name.keys && map_name.values
+  # remove = > map_name[key].remove
+  # addAll Not Add => map_name.addAll({Pairs})
 
-      print(t5.compareTo(t3));
-      print(t5.difference(t3));
-      print(t5.isAtSameMomentAs(t3));
-      print(t5.isAfter(t3));
+------------------------------------------------
+------------------------------------------------
+  # Runes[ 10 ]
+------------------------------------------------
+------------------------------------------------
+# Built_In_Types[ 11 ]
 
-      print(t5.subtract(Duration(days: 2,hours: 2)));
-      var t5 = t3.add(Duration(  days: 3, hours: 3));
-
-      print(t5.toIso8601String()); => Convert Number_Time Into String_Time 
-      var parse = DateTime.parse("2024-9-19");
-      var parse = DateTime.tryParse("2024-9-19"); // If Wrong_Format Will Return Null And   
+  # There Are Two Types Of Functions Built_In_Func && Not Built_In
+  # Variable Places In vsCode && In Lib Folder
+  # num Can Contain Double && Integer In The Same Time
+     So num have Common Func And Some Func does Not Work Such As
+     isOdd || isEven  because even && odd is Not Floating
+     => Can= 5 | 5.2 
+     isNaN();
 ------------------------------------------------
 ------------------------------------------------
   
-   Null Safety
+# Null Safety[ 12 ]
 
      ? When Store Empty Value Into A Var
      ! When Make An Ope Such Print, Functions On It
@@ -207,80 +220,293 @@ Lists
      print(a!.bitLength); // error Run Time
 ------------------------------------------------
 ------------------------------------------------
-Variables && Constant
+# Variables && Constant[ 13 ]
 
-	   final, const, dynamic, var, type
-	   Final && Const Mention Two Differences
-	   dynamic l = "love";
+	   # KeyWords => final, const, dynamic, var, type
+     # var, final, dynamic In Run Time && Compile Time 
+     # var For Any Type 
+       It Defines Automatically Variables Type
+       But Does Not Change its Type 
+     # dynamic
+       It Defines Automatically Variables Type
+       You Can Change its Type 
+     # Const You 
+       Can Not Change Value Of Var 
+       Initial[Assign] && declare In the same line
+       && Its Value Only Just IN Compiler Time
+     # Type  as class => Class obj_name = Constructor();    
+     # Final Is Good For Memory
+
+     # Try Use Final With Variables And Const With Classes
+     # Const Reseve in memory automatically Because in Compile Time
+     # But Final Only When it used
+
+    
+	   # Final && Const Mention Two Differences
+	   
+     [ dynamic x, const x,
+       final int x, type x
+       var x, num x,
+     ]
 ------------------------------------------------
 ------------------------------------------------
-If, Else If, Else 
+# If, Else If, Else[ 14 ] 
 
-  1- go do Or done
-  2- Check
-  3- Make A Decision
+    1- go do Or done
+    2- Check
+    3- Make A Decision
+    4- Step
+    
+    # if (Condition) {Code}
+      else {Code}
+      else if (Condition) {Code}	
+
+------------------------------------------------
+------------------------------------------------
+# Math Ope[ 15 ]
+
+  # +, -, ++, --, *, **, /, %
+  # [ ~/ ]
+  # ++, -- After And Before 
+  # "Word" * Num  Will Make Repeatation => "Ali" * 3 == AliAliAli
+  # Priority () then Pow Then *,/ then +,- =>    -(a + b)  &&  -a + b
+------------------------------------------------
+------------------------------------------------
+# Comprison, Logicla Ope[ 16 ]
+   
+  # Comparison Ope  =>    > | < | >= | <= | == | !=
+  # Logical Ope     =>    &&, ||, ! 
+  # Assiment OPe Math_Ope Then [ = ] 
+
+------------------------------------------------
+------------------------------------------------
+# BitWise_Ope[ 17 ]
+------------------------------------------------
+------------------------------------------------
+# BitWise_Ope_Practice[ 18 ]
+------------------------------------------------
+------------------------------------------------
+# If, Else If, Else Practice[ 19 ] 
+
+------------------------------------------------
+------------------------------------------------
+# If, Else If, Else Other_Practice[ 20 ] 
+------------------------------------------------
+------------------------------------------------
+# For[ 21 ]
+ 
+  # for(Start, End || Condtions; Steps) {Code}
+  # for(Variable in Range) {Code}
+   For( type Variable  List || Thing ) {Code}
+  # Start => Var For  Loop Not Other thing , used To Get Elements
+    its self Or Method
   
-  if (Condition) {Code}
-  else if (Condition) {Code}	
-  else {Code}
+------------------------------------------------
+------------------------------------------------
+
+# While[ 22 ]
+
+    Initial Variable
+    while(Conditon) { Code}
 
 ------------------------------------------------
 ------------------------------------------------
-Math Ope
+# do_while[ 22 ]
 
-  +, -, ++, --, *, **, /, %
-  ++, -- After And Before 
-  "Word" * Num  Will Make Repeatation => "Ali" * 3 == AliAliAli
-  Priority () then Pow Then *,/ then +,- =>    -(a + b)  &&  -a + b
+    Initial Variable
+    do{Code} while(Conditon);
+
+------------------------------------------------
+------------------------------------------------
+# Enum[ 25 ]
+
+  # Enum Are Instants But More Value 
+  # values Are Not String They May Be Bool || Without Quotation
+  # Enum Key_Word {val-1,val-2,......}
+  # Enum Must Out Of Main Func
+  # Not End With ;
+  
+  # => enum weekDay { one, two, three, four, five, sex, seven}
+  
+  # To Print Enum Use Enum_Name.values
+  # Enum_Name.values.forEach(
+        (var) {print(var?.toString().split(".")?.elementAt(1));}
+    );
+  
+  # To Get Index Of Enum => Enum_Name.values.indexOf(Enum_Name.ValueName)
+    || Enum_Name.ValueName.index
+  
+  #To Get Length =>  color.values.length;   
+  
+  # To Convert Into List => Enum_Name.values
+  ------------------------------------------------
+  ------------------------------------------------
+# Enum_Other[ 26 ]
+
+  # You Can Make Constants With Values
+  # OutOfMain => {
+
+  # => enum weekDay { one("value"), two("value"), three("value"),...}
+  const enum_name(this.message); // refer to obj and get val of val
+  final String message; // store val
+   }
+  
+  # print(Enum_Name.value.message) // use val 
+    ||const x = Enum_Name.value;
+      p(x.message);
+
+  ------------------------------------------------
+  ------------------------------------------------
+?? Switch[ 27 ] ?? someNotEnd ??
+
+  # Not Include > | < | != See That
+  # Initial Variable
+  # Switch(Expression) {
+      case Number || String :
+      case Number || String :
+        code;
+        break;
+      default:
+        code;
+        break;
+  }
+------------------------------------------------
+------------------------------------------------
+
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+# Time[30]
+   # var t = DateTime.utc(year); => Get Time By Utc(Z) =>  
+   # var t = DateTime.now(); => Get Time Now
+   # var t4 = DateTime.now().timeZoneName;	
+   # var t4 = DateTime.now().timeZoneOffset
+   # var t = DateTime.now(day
+                        weekday
+                        month
+                        year
+                        hour
+                        minute
+                        second);
+   
+   
+   # print(t2.isUtc);
+   # print(tx.toUtc());
+   # var tx = t2.toLocal()
+   # print(t5.compareTo(t3));
+   # print(t5.difference(t3));
+   # print(t5.isAtSameMomentAs(t3));
+   # print(t5.isAfter(t3))
+   # print(t5.subtract(Duration(days: 2,hours: 2)));
+   # var t5 = t3.add(Duration(  days: 3, hours: 3))
+   # print(t5.toIso8601String()); => Convert Number_Time Into String_Time 
+   # var parse = DateTime.parse("2024-9-19");
+     var parse = DateTime.tryParse("2024-9-19"); // If Wrong_Format Will Return Null And   
+     ------------------------------------------------
+     ------------------------------------------------
+# Optional, Positinal Parameters[ 41 ]     
+  # Optional, Positinal Are From Left To Right And By Order
+  # use [] For Optional => Func_Name([one para || More])
+  # value of [] if not use will be null like default;
+
+     ------------------------------------------------
+     ------------------------------------------------
+
+# Optional_Named Parameters[ 42 ]     
+
+  # use {} For Named => Func_Name([one para || More])
+  # {} Means Optinal And Named In The Same Time
+     So Not Using Value From You Or User Will Not Make An Error
+  # Order Not Required
+  # In Call Put Forrmatting Is: Var: Value; 
+  # value of {} if not use will do Nothing;
+  # 
+
+
+     ------------------------------------------------
+     ------------------------------------------------
+# Optional_Default Parameters[ 43 ]     
+
+     To Make Default Value In Build => para_name = value 
+     How About Making Optinal && Default Para In The Same Time
+     What About Example Of Ope On 
+     ------------------------------------------------
+     ------------------------------------------------
+# import && show[ 45 ]     
+
+     # import  "File_Path" show || hide Func [WithOut () Of Func] 
+     # import  "File_Path" show func_1, func_2, func_3, .... 
+     # import  "File_Path" hide func_1, func_2, func_3, .... 
+     ------------------------------------------------
+     ------------------------------------------------
+# Conditional_Expression_??[ 46 ]     
+
+  # ?? => error when Any value Is Null || Not Set =>
+       var n1 = null;
+       var res = n1 ?? n2;
+       var n1 = 20; // 
+     ------------------------------------------------
+     ------------------------------------------------
+     # Exception Handling[ 47 ]
+     
+      # try{} on Name_error{print("   U Can Print Any Msg")}
+      # try{} catch(e){ ptrint(e)} // U Can Not Print Any Msg
+      # try{} on || catch{} finally{}
+      # finally to make sure that code excecuted
+      # there are five Errors Or More
+       
+     ------------------------------------------------
+     ------------------------------------------------
+# Comments[ 48 ]
+
+  # Two Basis For Comments 
+  # What This, Why For || What 
+  # Expressive And Needed
+
+  # Prevent Code From Excecution
+  # Explain Code
+  # After Time You Return
+  # Some One Will Maintain || Read  It
+  # For Work
+------------------------------------------------
+------------------------------------------------
+Dart Into Exe [ 49 ]
+  #Dart Into Exe => dart compile exe file_path
+  For Path In Linux Path By ./ Before Pathes
+  What If You Want an Extesion Works On all PlatForms 
+  https://dart-dev/tools/dart-compile => Page Of Converting Dart_App
+
+
+------------------------------------------------
+------------------------------------------------
+Dart Technology[ 50 ]
+Tech as:
+  1- Dart Native
+    Desktop app
+    Mobile App
+    Server App
+  2- Dart Web
+    WebApplications
+------------------------------------------------
+------------------------------------------------
+Command Line Arguments[ 55 ]
+
+# Normal In vsc Excecuted from inside of prog
+# dart Compile Not Vsc Run Arguments Of Main
+
+# dart file_path Arguments Of Main_Function => these are Arguments
+  passed to dart_func to programme stand ||
+  Run Make Prog run against normal
+------------------------------------------------
+------------------------------------------------
+  
+
+------------------------------------------------
+------------------------------------------------
+     # '$num' VS '${num - 1}'
 ------------------------------------------------
 ------------------------------------------------
 ConCatination
 
-  + | $ | ${}  
-------------------------------------------------
-------------------------------------------------
-For
-
-  For( type Variable  List || Thing ) {Code}
-  for(Start,   End || Condition,   Step) {Code}
-
-While
-
-  Initial Variable
-  while(Conditon) { Code}
-
-do_while
-
-  Initial Variable
-  do{Code} while(Conditon);
-
-Switch
-
-  Not Include > | < | != See That
-  Initial Variable
-  Switch(Expression) {
-    case Number || String :
-    case Number || String :
-      code;
-      break;
-    default:
-      code;
-      break;
-  }
-
-
-------------------------------------------------
-------------------------------------------------
-
-------------------------------------------------
-------------------------------------------------
-
-------------------------------------------------
-------------------------------------------------
-------------------------------------------------
-------------------------------------------------
-------------------------------------------------
-------------------------------------------------
-
-------------------------------------------------
-------------------------------------------------
+ #  + | $ | ${}  

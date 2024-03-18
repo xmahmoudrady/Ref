@@ -55,6 +55,13 @@ int vv  = 222;
 test_scope() {
   // int v = 222;
   print(vv);
+// --------
+print("\n----------------\n");
+// do Not Effect On The Origin I Tested That By Print The Variable Only
+var toUp = "what is your name";
+print(toUp.toUpperCase());
+print(toUp);
+print("\n----------------\n");
 
   
 

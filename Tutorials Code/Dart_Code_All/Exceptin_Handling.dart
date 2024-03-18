@@ -1,5 +1,4 @@
 void main() {
-  
   int x = 10;
   double y = 3.00;
   var z = 0;
@@ -7,23 +6,21 @@ void main() {
   // var r2 = x / z;
   // print(r2);
 
-
   // print(r);
   // print(r2);
-
-
-
-try {
-  var r2 = x / 0;
-  print(r2);
-}
-catch(e) {
-  print(e);
-}
-
-
-
-
-
+int r2;
+  try {
+    var r2 = x / 0;
+  } catch (e) {
+    print(e);
+  } 
+  
+  //  on IntegerDivisionByZeroException {
+  //   print("There is An Error");
+  // } 
+  
+  finally {
+    print("Excuted Code");
+  }
 
 }

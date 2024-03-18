@@ -1,8 +1,7 @@
-import 'imported_lib.dart' ;
-// import 'imported_lib.dart' show age;
-// import 'imported_lib.dart' hide *;
-import 'imported_lib.dart' hide isValid;
-// import 'imported_lib.dart' hide isValid_Other, isValid ;
+// import 'imported_lib.dart' ;
+import 'imported_lib.dart' show age, isValid;
+// import 'imported_lib.dart' hide age ;
+// import 'imported_lib.dart' hide isValid_Other, isValid,age ;
 
 void main() {
   isValid_Other();

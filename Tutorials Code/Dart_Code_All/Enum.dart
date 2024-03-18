@@ -1,5 +1,11 @@
 import "dart:io";
 
+// enum Does Not Deal With Numbers Or Any Value [ only Words ]
+// No ""
+//  No ; In The End
+// Out Of Main_Func_Of_Dart
+enum weekDay { one, two, three, four, five, sex, seven}
+enum color { red, green, yellow }
 void main() {
   print("-----------------\n");
   // print(color.values);
@@ -23,9 +29,3 @@ void main() {
   // print(color.values.indexOf(color.red));
   print("-----------------\n");
 }
-// enum Does Not Deal With Numbers Or Any Value [ only Words ]
-// No ""
-//  No ; In The End
-// Out Of Main_Func_Of_Dart
-enum weekDay { one, two, three, four, five, sex, seven}
-enum color { red, green, yellow }
