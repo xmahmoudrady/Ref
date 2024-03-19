@@ -471,7 +471,7 @@
   # For Work
 ------------------------------------------------
 ------------------------------------------------
-Dart Into Exe [ 49 ]
+# Dart Into Exe [ 49 ]
   #Dart Into Exe => dart compile exe file_path
   For Path In Linux Path By ./ Before Pathes
   What If You Want an Extesion Works On all PlatForms 
@@ -480,33 +480,113 @@ Dart Into Exe [ 49 ]
 
 ------------------------------------------------
 ------------------------------------------------
-Dart Technology[ 50 ]
-Tech as:
-  1- Dart Native
-    Desktop app
-    Mobile App
-    Server App
-  2- Dart Web
-    WebApplications
+# Dart Technology[ 50 ]
+  Tech as:
+    1- Dart Native
+      Desktop app
+      Mobile App
+      Server App
+    2- Dart Web
+      WebApplications
 ------------------------------------------------
 ------------------------------------------------
-Command Line Arguments[ 55 ]
-
-# Normal In vsc Excecuted from inside of prog
-# dart Compile Not Vsc Run Arguments Of Main
-
-# dart file_path Arguments Of Main_Function => these are Arguments
-  passed to dart_func to programme stand ||
-  Run Make Prog run against normal
-------------------------------------------------
-------------------------------------------------
+# Command Line Arguments[ 55 ]
   
+  # Normal In vsc Excecuted from inside of prog
+  # dart Compile Not Vsc Run Arguments Of Main
+  
+  # dart file_path Arguments Of Main_Function => these are Arguments
+    passed to dart_func to programme stand ||
+    Run Make Prog run against normal
+------------------------------------------------
+------------------------------------------------
+# Opp Intro[ 56 ]
+
+  # class has Prop, Constructors, Methods 
+  # U Can Start Name Class With Small but Capital  Is Better
+  # creating class is outSide Main Func =>
+   class_KeyWord[class] class_name {Prop, Meth}
+  # Calling => Name_Class|Varible_KeyWord +
+   Object||Varible Name =  Constructor();
+  # Object.prop
+  # Object.function()
+  # What Is Encapsulation
+  # Differences Between Class And Object {Memory, Mean, Code}
+  # Field == property == Instance Variable
+  # You Can Make Unfnshed Instances || Objects
+  # You Can Make Class External files Contains *  And Import It 
+  ------------------------------------------------
+  ------------------------------------------------
+# Constructor[ 57]
+  # Constructor Excecuted Automatically when make an obj  
+  # Constructor  inhertied and  Excecuted Automatically when make an obj
+  # Constructor U Can Use It To Modify In Data || Prop 
+  # U Can Give Or Not Give Value To Props In Class[*Depeding You*]
+  # If There Are Args You Must Pass It When Make An Object
+  # Name Of Constructor Is The Same Name Of Class
+  # use this To Pass Props Of Class To It 
+
+  # class Work {
+    var age;
+    var name;
+
+    Work(this.name, this.age)
+    Work(this.name, this.age) { Codes }
+    
+  }
+  ------------------------------------------------
+  ------------------------------------------------
+# Anonymous_Obj[ 58 ]
+
+  # Anonymous_Obj Created To Make Memory Lighter
+  # this is the way to Invoke Func In Anonymous_Obj
+  # Class_Name().Func(); IN Calling For Funcs
+  # Class_Name().Func; IN Calling For Props
+  # work().job();
+
+     
+------------------------------------------------
+------------------------------------------------
+# Acces_Modifier[ 59 ]
+
+  # Private Is Can Not AcceSsed || Suggested
+  # Private AnyWhere In External Or Internal Files
+  # use _ before Prop || Func to Make It Private
+  # _job() => {} || int _age = ;
+  # See If You Can Do that With Class Its Self
+------------------------------------------------
+------------------------------------------------
 
 ------------------------------------------------
 ------------------------------------------------
-     # '$num' VS '${num - 1}'
+
+------------------------------------------------
+------------------------------------------------
+  # الختام[ 131 ]
+
+    # Mastring Dart Book
+    # Dart Documentation PDF
+    # Reference For You 
+    # Dart Codes  GitHub || Dart Projects Github
+    # Two Channel Dart Expert 1 [ vid 8h ]
+      Evrist An Indian Man Called علوش
+    # Pub.div => Contains Of Any Pkg For Dart && Flutter => http|exe
+    
+------------------------------------------------
+------------------------------------------------
+  # Sync VS Async[ 95 ]
+    Synchornous
+    # Sync => Wait Until Excecuted, Line By Line, Top To Bottom
+    # ASync => Not Wait Until Excecuted, Not Line By Line,
+    # When Use Asyn
+      1- تحمبل الملفات من النت 
+      2- الاتصال بقواعد البيانات والتعامل معها
+      3- الاعمال الطويلة التى تستهلك جزء كبير من موارد الجهاز
+      4- قراءة البيانات من الملفات
+    # Example =>future.delayed(Duration(seconds:10),()=> { Code});
 ------------------------------------------------
 ------------------------------------------------
 ConCatination
 
  #  + | $ | ${}  
+ # '$num' VS '${num - 1}'

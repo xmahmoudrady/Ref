@@ -2,7 +2,7 @@ void main(){
   //n Work fwork = Work();
   // Work().job();
   // Work().lv; // Not Work
-  // print(Work().lv);
+  print(Work().lv);
   Cons con = Cons("ali", 20);
 }
 
