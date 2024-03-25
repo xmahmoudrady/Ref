@@ -11,10 +11,10 @@
 
   # Dart Require Windows 10 At Least And PowerShell
   # Not Work On All Unix Distributions || OS
+  # Does Not Come With Editor
   # Dart.dev => Website 
   # Created 2011 && After c, java, kotlin 
   # Is Better Than Kivy
-  # Does Not Come With Editor
 
   # dart.dev/#try-sdk => online Compile Editor 
   # try a codelab  
@@ -120,12 +120,13 @@
 ------------------------------------------------
 # Lists[ 7 ] ?? someNotEnd ??
 
-  # List name = [   Any value untill Null]
+  # List name = [ Any value untill Null ]
   # List<type> name = [only type But You Can Not Put null_value] 
   
-  # List_3 = [ , , ,...List_1,...List_2 ];
-  # ...List_Name To Add List Inside Other List
-    You Can Add More List Inside Other
+  # You Can Add More List Inside Other
+    ...List_Name To Add List Inside Other List =>
+      List_3 = [ , , ,...List_1,...List_2 ];
+
   # print(List, List[Index])
   
   # List.[ 
@@ -144,7 +145,7 @@
           removeRange(start, end),	 removeLast();
           insert(Index,e),  insertAll(index, []),
     ]
-   # Effect On the Origin Var  
+   # Effect On the Origin Var  Not Stored In Memory
        insert, insertAll, add, addAll,
        remove, removeAt, removeRange, removeLast 
   
@@ -197,6 +198,26 @@
 ------------------------------------------------
 ------------------------------------------------
   # Runes[ 10 ]
+
+    - Asci_Code Table [english[nums,letter], controls ]
+
+    - word.codeUnits => Nums[ all ] for element
+    - word.codeUnits.length  => Length Numbers For Ele In Memory
+    - word.codeUnitAt(index) => Num For Char 
+    
+    - Format Emojy => String emj '\u{5|6_Digits From [0-9a-f]}'
+                   => "\u{1f603}" ;     
+                   
+    - emj.runes => 
+      get *Decimal_Num* For Char_Emj From {Format_Char} but accepts loop on it
+      
+    - for( var w in word.runes)
+    - emj.codeUnitAt(0).toRadixString(16) =>
+        get *HexaDecimal_Num* For Char_Emj from Decimal_Num
+        
+    - String.fromCharCode(128515) => get *char* from decimal code
+
+
 ------------------------------------------------
 ------------------------------------------------
 # Built_In_Types[ 11 ]
@@ -280,7 +301,7 @@
 
 ------------------------------------------------
 ------------------------------------------------
-# BitWise_Ope[ 17 ]
+# BitWise_Ope[ 17 ]  ??-Later-??
 ------------------------------------------------
 ------------------------------------------------
 # BitWise_Ope_Practice[ 18 ]
@@ -288,9 +309,17 @@
 ------------------------------------------------
 # If, Else If, Else Practice[ 19 ] 
 
+  - Choose closes Type that suit with is_cold, is_springy, is_gizz
+  - Number Is Negative Or Zero Or Positive
+  - What Is The Difference Between In Positive Num_Example
+     if, else if && Nested If && ifWithAnd
+  - 
+
+
 ------------------------------------------------
 ------------------------------------------------
 # If, Else If, Else Other_Practice[ 20 ] 
+  From Three Numbers From User Get The Greatest Num
 ------------------------------------------------
 ------------------------------------------------
 # For[ 21 ]

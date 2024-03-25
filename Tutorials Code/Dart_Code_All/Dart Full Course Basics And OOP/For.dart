@@ -8,6 +8,7 @@ void main() {
    int count = 0;
   for(final int num in nums) {
     // print(num);
+    // print(num);
     count += num;
   print("count of list nums is : $count");
   }
@@ -21,5 +22,18 @@ void main() {
   //   var ch = String.fromCharCodes(ele);
     // });
   word.runes.forEach((ele) { print(ele);});
+  /* 
+  
+   */
 
+/* 
+
+
+ */
+
+/* 
+
+
+
+ */
 }

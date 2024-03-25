@@ -1,2 +1,2 @@
-
- set s = {'w','o', 'r', 'd'} ;
+print(area.breadth);
+// print(area.length);

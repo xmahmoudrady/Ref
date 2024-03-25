@@ -8,10 +8,10 @@ void main() {
   print("welcome to dart");
   print("this is a string $t");
   print("this is a string ${t}");
-print("-----------------\n");
+// print("-----------------\n");
     String other = "this is a text   ";
   print(other);
-  // print(other.indexOf("a"));
+   print(other.indexOf("a"));
   // print(other.indexOf("i",4));
   // print("a".codeUnits);
   // print("A".codeUnits);
