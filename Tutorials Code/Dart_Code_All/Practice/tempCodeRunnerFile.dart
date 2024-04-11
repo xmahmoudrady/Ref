@@ -1,2 +1,2 @@
 
-    break;
+    print(usrs[ele]);

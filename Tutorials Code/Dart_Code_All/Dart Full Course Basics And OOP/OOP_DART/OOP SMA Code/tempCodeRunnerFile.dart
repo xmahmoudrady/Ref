@@ -1,3 +1,1 @@
- Work.Other() {
-    print("I am A [ Named_Constructor ]  From Class work");
-  }
+      String get Task {  return  " tsk is : ${_tsk} A school "; }

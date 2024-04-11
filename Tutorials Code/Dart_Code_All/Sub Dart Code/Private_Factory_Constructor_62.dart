@@ -1,6 +1,6 @@
 import "dart:io";
 
-import "../Dart Full Course Basics And OOP/Functions.dart";
+// import "../Dart Full Course Basics And OOP/Functions_33.dart";
 // -------------------Notes---------------------
 /* 
   # why error when do not put param in Named constructor 
@@ -17,16 +17,19 @@ void main() {
     print(other);
   */
 // Area area = Area(10, 20);
+// Area area = Area(20, 40);
+Area area = Area(-20, 40);
 //  error 
 // print(area.breadth);
 // print(area.length);
-// print('area[obj].area[prop]: ${area.area}');
+print('area[obj].area[prop][${area.breadth}] * [${area.length}]: [${area.area}]');
 // --------------
-final person1 = Person("ali", "elguzawy");
-final person2 = Person.fromMap({"ali": "elguzawy"});
-print("From Normal Constrctor:  ${person1.firstName} ${person1.lastName}");
-print("From Factory Constrctor: ${person2.firstName} ${person2.lastName}");
-
+/*
+  final person1 = Person("ali", "elguzawy");
+  final person2 = Person.fromMap({"ali": "elguzawy"});
+  print("From Normal Constrctor:  ${person1.firstName} ${person1.lastName}");
+  print("From Factory Constrctor: ${person2.firstName} ${person2.lastName}");
+*/
 
 
 
@@ -67,18 +70,20 @@ class Area {
 
   // Private Constructor
   const Area._internal(this.length, this.breadth): area = breadth * length ;
+  
 // Factory Constructor
   factory Area(int length, int breadth) { 
     if(length < 0 || breadth < 0) {
-          return  Area._internal(0,0);
+          return  Area(0,0);
     }
     // redirect to private constructor
      else { return Area._internal(length, breadth);}
     }
-  
 }
 // ---------------
-class Person {
+
+/* 
+    class Person {
   final  String firstName;
   final  String lastName;
   
@@ -97,6 +102,7 @@ class Person {
   
 }
 
+*/
 
 
 

@@ -153,11 +153,13 @@
 ------------------------------------------------
   # Set[ 8 ] ?? someNotEnd ??
 
-     # Its Format is set[keyword] name[NameOfSet] = {}
-     # Set Accepts other_Funcs Such As Lists such 
+     # Its Format is Set[keyword] name[NameOfSet] = {}
+     # Set Accepts other_Funcs Of Lists such 
      [first, last, length, contains] But There Are Some Differences
+
      #Not Repeat
      # To Get Ele By => set_Name.elementAt(Index)
+     # Connvert Set Into List => Set_Name.toList();
      # print(x.add()) // this is an error 
         the correct is x.add(); && print the set not set.add()
      # To Get Last Ele Not Use I = -1 But => name.length -1
@@ -180,7 +182,7 @@
      
 ------------------------------------------------
 ------------------------------------------------
-# Map[ 9 ]
+# Map || Dictionary[ 9 ]
 
   # Map name = {Pairs => x : value, y: value};
   # map.forEach((key,value) {print('${key} =>  ${value}');});
@@ -199,25 +201,29 @@
 ------------------------------------------------
   # Runes[ 10 ]
 
-    - Asci_Code Table [english[nums,letter], controls ]
+    - Asci_Code Table => [english[nums,letter], controls ]  from [0:255]
 
-    - word.codeUnits => Nums[ all ] for element
+    - word.codeUnits => This Is A Prop && Get Nums[ all ] for element
     - word.codeUnits.length  => Length Numbers For Ele In Memory
-    - word.codeUnitAt(index) => Num For Char 
+    - word.codeUnitAt(index) =>  This Is A Method && Num For Char 
     
-    - Format Emojy => String emj '\u{5|6_Digits From [0-9a-f]}'
+    - Format Emojy => String emj = '\u{5|6_Digits From [0-9a-f]}'
                    => "\u{1f603}" ;     
                    
     - emj.runes => 
-      get *Decimal_Num* For Char_Emj From {Format_Char} but accepts loop on it
+      get *Decimal_Num* For Char_Emj From {Format_Char{like emj}} but accepts loop on it
       
     - for( var w in word.runes)
     - emj.codeUnitAt(0).toRadixString(16) =>
         get *HexaDecimal_Num* For Char_Emj from Decimal_Num
         
     - String.fromCharCode(128515) => get *char* from decimal code
-
-
+    ==========================
+    String emj = "\u{1f603}"; // get char from this format 
+    print(emj); // 
+    print(emj.runes); //128515 // get decimal from this format
+    print(emj.codeUnitAt(0).toRadixString(16)); // get hexdecimal of char from this format
+    print (String.fromCharCode(128515)); // get char from decimal 
 ------------------------------------------------
 ------------------------------------------------
 # Built_In_Types[ 11 ]
@@ -433,11 +439,22 @@
    # var parse = DateTime.parse("2024-9-19");
      var parse = DateTime.tryParse("2024-9-19"); // If Wrong_Format Will Return Null And   
      ------------------------------------------------
+    # Functions, Fat_Arrow[ 36 ]
+    
+        # Print VS Return In Memory
+        # Fat Arrow Function  Put => Instead Of `{}`
+        # In Return || Typed Func => Put => Instead Of `{}` && Delete Return
+        # Fuc Rules
+        # Usage Of Func
+        # Scope
+        # Params && Args
      ------------------------------------------------
-# Optional, Positinal Parameters[ 41 ]     
-  # Optional, Positinal Are From Left To Right And By Order
-  # use [] For Optional => Func_Name([one para || More])
-  # value of [] if not use will be null like default;
+     ------------------------------------------------
+    # Optional, Positinal Parameters[ 41 ]     
+    
+        # Optional, Positinal Are From Left To Right And By Order
+        # use [] For Optional => Func_Name([one para || More])
+        # value of [] if not use will be null like default;
 
      ------------------------------------------------
      ------------------------------------------------
@@ -585,9 +602,44 @@
   # See If You Can Do that With Class Its Self
 ------------------------------------------------
 ------------------------------------------------
+[ 60 ]
+------------------------------------------------
+------------------------------------------------
+Named_Constructor[ 61 ]
 
-------------------------------------------------
-------------------------------------------------
+    // ----------------Notes----------------
+/*
+   # Do Not Forget When Calling Named Constructor write Its Name =>
+      Wrong => Class Obj = Constructor();
+      Correct => Class Obj = Constructor.Named_Constructor();
+   # You Can use print in class without any thing you can print contructor =>
+     Class x { print("xxxxx");} print(x_Obj);
+*/
+
+You Can Do More Classes Or Shape Of Class By Do More Named_Constructor
+Another Shape Of Constructor 
+  Constructor(){Props && Code} Or
+  Constructor():Props Seperated By Colon {Code} 
+
+  Example
+  Notice Three Stage Of Variables Look one Declare Then Call Then Initial Or Use 
+    /*
+   class Color {
+                var red;
+                var green;
+                var blue;
+                Color(this.red, this.green, this.blue){
+                  red = 0; green = 0; blue = 0;
+                  print("it is on Black Color");
+                }
+                Color.indian_red()
+                :red = 222,
+                green = 123,
+                blue = 144
+                { print("It Is On Indian_Color");}
+              }
+  */
+
 
 ------------------------------------------------
 ------------------------------------------------

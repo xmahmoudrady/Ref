@@ -1,0 +1,31 @@
+what is the different  Prog_Lang, Library, Technology, FrameWork, Tools
+Editor Online For Dart || Other Lang_Prog
+In Learning Teach What is Usage And When, Where Vip
+From User Input => phone number is a String Not Number Why As No Operations On It
+Comments If U Want
+    Work With A Team 
+    Prevent A Code
+    For Documentation
+    When Return Again To The Code
+From Data Type => List, Set, Map
+Know What Data Type List, Set, Map Can Hold
+In Dart => camelCase 
+$, ${} => $ See Only The First
+# Later Search How To OPtimize Memory General , Specific In Var, Obj
+When Mk App Notice 4 Things
+    1- Wrong Code => Try, Catch
+    2- Wrong Value
+    3- No Inputs {Null}
+    4-
+# Conditions Contains => If, Switch, Conditional Expression
+    # Conditional Expression => ?? && Condition? True: False
+Default Values Is Null
+Switch 
+1- No Range
+2- No > | < | =<> 
+3- !=
+4- Same Data Type => 
+5- Must Break;
+
+
+    

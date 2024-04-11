@@ -1,10 +1,11 @@
 // git status
 /*  
-    git status 
-    git add path_file | *
-    git reset head file_name
-    git commit -m "message here"
-    git push remote_name  local_branch_name
+    Status => git status 
+    Add => git add path_file | *
+    Reset => git reset head file_name
+    Commit => git commit -m "message here"
+    Push => git push remote_name  local_branch_name
+    Log  => git log
 ----------------------------------------------------------------------------------
 
     git remote      -v    get remote_name Repo
@@ -20,12 +21,15 @@
     Rename You Must Exist In It To Rename
 ----------------------------------------------------------------------------------    
 
-    git config -- global --edit  To Configurate Or Set Settings In Editors
     git config -l | --list       To List Configure
-    git config -l --show-origin  To Show From Where Git_Hub Get Data
     git config --help              Open Manual Of Git_Hub 
-    git config --global key.value => user.email  [Get] Settings In CommandLine
-    git config --global key.value => user.email "Value" [Set] Settings In CommandLine
+    git config -l --show-origin  To Show From Where Git_Hub Get Data
+
+    1- git config -- global --edit  To Configurate Or Set Settings In Editors
+    2- git config --global key.value => user.email  [Get] Settings In CommandLine
+       git config --global key.value =>
+         user.email "Value" [Set] Settings In CommandLine
+    
     git config --global key.value => user.email "" To Unset Setting | Make It Empty
     git config --global --unset key.value          To Unset Setting | Make It Empty 
 
@@ -50,7 +54,7 @@
 ----------------------------------------------------------------------------------
   Stash
 
-      git stash => after add Stage Area
+      Put Files In Box Untill Finishing Work, After Add Stage Area => git stash 
 
       Msg Of Stash Comes From Commits
       git stash save "Msg For Stasch" => after add Stage Area
@@ -63,8 +67,10 @@
       git stash pop => remove from stash and ready to be comitted
       git stash drop => remove from stash and add contents to be commited
       git stash apply => make a copy add andcontents to be commited
+
       pop | drop | apply => all Work on the last ele if do not specify
       git stash [drop|pop|apply] stash@{Index} => If u Want Specifc Stash
+      
       git stash clear => Remove All Stashes Forever
 
       git pull origin master case if there is edits do that and push
@@ -74,12 +80,12 @@ Ignore Files && Directories
 
    Make File Named .gitignore.git
    Put In It All You Want To Ignore To Be Add Or Comitted  
-   file You Want           => Name Of It Directly
+   file You Want           => Name Of It Directly then /
    Files OF Extensions     => *Extension
    Excespt Files | File    => !file.exe
    Folder                  => Folder_Path/ | Folder_Name/
-   Search In Goolge About  => [git ignore patterns]
-   git add [-f | --force] File_Name => If You Want forcely Add File To Stage Area 
+   # Search In Goolge About  => [git ignore patterns]
+   # git add [-f | --force] File_Name => If You Want forcely Add File To Stage Area 
 -------------------------------------------------------------
 
 Tags 
@@ -112,25 +118,27 @@ Tags
         Artilce, Refrences, Notices About GitHub On The Website Of Elzero
 
     Git_Hub_Notes
-        Create Repo For Every Project
-        Create A New Branch For Every Feature Or Enhancement 
-        No Need To Connect To Remote Repo When Working
-	if You Forget Some Thing it prefers Commit More ONe Not Push More One
-        Any One Pull, push Addend On Permissions
+        # Create Repo For Every Project
+        # Create A New Branch For Every Feature Or Enhancement 
+        # No Need To Connect To Remote Repo When Working
+	      # if You Forget Some Thing it prefers Commit More ONe Not Push More One
+        # Any One Pull, push Addend On Permissions
         
-	Words => [Repo, Branch, Local Repo, Remote Repo,Clone[From Local | Remote],
-         Commit[SnapShot| CheckPoint In Your Local Repo], Push, Pull, Pull Request]
+	Words => [
+            Repo, Branch, Local Repo, Remote Repo,Clone[From Local | Remote],
+            Commit[SnapShot| CheckPoint In Your Local Repo],
+            Push, Pull, Pull Request
+            ]
+-------------------------------------------------------------
+  # git log => git log
+  # Head You Want To Stop At Him  => git checkout #id  || git reset --hard #id
+  # to Update RemoteRepo{main} =>  git push origin main --force
+  # You Can Do More One Or One    
+  # Take Care Of Reset From Deleting Your Work    
+-------------------------------------------------------------
 
+-------------------------------------------------------------
 
-
-
-
-
-    
-    
-    
-    
-    
 -------------------------------------------------------------
 
 */

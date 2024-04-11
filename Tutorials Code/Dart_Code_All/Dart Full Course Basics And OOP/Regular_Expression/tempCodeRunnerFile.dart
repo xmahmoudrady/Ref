@@ -1,1 +1,1 @@
-print(con.replaceAll(reg, "*"));
+0-9
