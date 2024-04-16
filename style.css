@@ -3,3 +3,9 @@ h1 {
     background: #000;
     text-transform: capitalize;
 }
+
+h2 {
+    color: green;
+    background: #000;
+    text-transform: capitalize;
+}
